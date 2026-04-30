@@ -443,7 +443,7 @@ body.admin-mode .admin-status{display:block;}
 <!-- NAV -->
 <nav>
   <a class="nav-brand" href="#hero">
-<img src="/raptor-transparent.png" alt="Ravenwood DECA Logo"/>    <div class="nav-wordmark">
+<img src="raptor-transparent.png" alt="Ravenwood DECA Logo"/>    <div class="nav-wordmark">
       <span class="nav-word1">Ravenwood DECA</span>
       <span class="nav-word2">Chapter · Est. X </span>
     </div>
@@ -465,7 +465,7 @@ body.admin-mode .admin-status{display:block;}
   <div class="hero-content">
     <div class="hero-eyebrow">Ravenwood High School &nbsp;·&nbsp; DECA Chapter</div>
     <div class="hero-logo-ring">
-<img src="/raptor-transparent.png" alt="Ravenwood DECA Logo"/>    </div>
+<img src="raptor-transparent.png" alt="Ravenwood DECA Logo"/>    </div>
     <h1 class="hero-title">Lead.<br><span class="accent">Compete.</span><br><span class="red">Win.</span></h1>
     <div class="hero-divider"></div>
     <p class="hero-sub">Preparing emerging leaders &amp; entrepreneurs for careers in marketing, finance, hospitality &amp; management.</p>
@@ -709,7 +709,7 @@ body.admin-mode .admin-status{display:block;}
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">
-<img src="/raptor-transparent.png" alt="Ravenwood DECA Logo"/>  </div>
+<img src="raptor-transparent.png" alt="Ravenwood DECA Logo"/>  </div>
   <div class="footer-name">Ravenwood DECA</div>
   <div class="footer-tagline">Lead · Compete · Win</div>
   <div class="footer-links">
@@ -733,6 +733,12 @@ const store = {
   members: [],
   hof: { corp:[], finalists:[], top10:[], glass:[] }
 };
+
+const SUPABASE_URL = "https://acvrkxyerqnxmujfddvp.supabase.co";
+
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFjdnJreHllcnFueG11amZkZHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc0NzM3MDgsImV4cCI6MjA5MzA0OTcwOH0.hBxW4X7din51sNH8JFL22ZAUk1-5QKzJGJpct3d2KVY";
+
+const decaDB = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // load from localStorage
 try {
