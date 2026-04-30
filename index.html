@@ -734,12 +734,6 @@ const store = {
   hof: { corp:[], finalists:[], top10:[], glass:[] }
 };
 
-const SUPABASE_URL = "https://acvrkxyerqnxmujfddvp.supabase.co";
-
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFjdnJreHllcnFueG11amZkZHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc0NzM3MDgsImV4cCI6MjA5MzA0OTcwOH0.hBxW4X7din51sNH8JFL22ZAUk1-5QKzJGJpct3d2KVY";
-
-const decaDB = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
 // load from localStorage
 try {
   const saved = localStorage.getItem('ravenwood_deca');
