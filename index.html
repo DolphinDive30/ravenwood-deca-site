@@ -177,13 +177,20 @@ section{padding:6rem 2rem;}
 .officer-card:hover{transform:translateY(-5px);border-color:rgba(184,151,58,0.3);box-shadow:0 16px 40px rgba(0,0,0,0.4);}
 .officer-card:hover::after{transform:scaleX(1);}
 .officer-avatar{
-  width:80px;height:80px;border-radius:50%;
+  width:168px;
+  height:168px;
+  border-radius:50%;
   background:linear-gradient(135deg,var(--red-dark),var(--graphite));
   margin:0 auto 1.25rem;
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--white);
-  border:2px solid rgba(184,151,58,0.25);
-  box-shadow:0 4px 16px rgba(190,30,45,0.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Playfair Display',serif;
+  font-size:1.8rem; /* keeps initials readable */
+  font-weight:900;
+  color:var(--white);
+  border:3px solid rgba(184,151,58,.55);
+  box-shadow:0 10px 28px rgba(0,0,0,.45);
 }
 
 .officer-avatar img{
